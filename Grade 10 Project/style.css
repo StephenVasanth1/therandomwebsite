@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Tektur:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lumanosimo', cursive;
+    box-sizing: border-box;
+}
+body{
+    background-image: rgb(0, 255, 217);
+    color: darkcyan
+}
+header{
+    padding: 10px 10%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgba(0, 139, 139, 0.575);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;     
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: darkcyan;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;   
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.row-home{
+    padding: 25px 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col-home-1{
+    flex-basis: 35%;
+    margin-top: 8%;
+    font-size: 30px;
+}
+.col-home-1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.col-home-2 img{
+    width: 80%;
+}
+
+.webfooter{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: darkcyan;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #a8a7a7;
+}
+.btn{
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    border: 1px solid darkcyan;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-top: 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgba(0, 139, 139, 0.534);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: darkblue
+    colour: #c4d5ec;
+}
+
+#aboutmain{
+    padding: 70px 0 90px 70px;
+    color: darkcyan;
+    margin-bottom: 20px;
+}
+.aboutsection{
+    padding: 10px 10%
+}
+.aboytrow{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.aboutcol1{
+    border-radius:15px;
+}
+.aboutcol2{
+    flex-basis: 75%
+}
+.about-title{
+    font-size: 50px;
+    font-weight: 600;
+    color:rgba(0, 139, 139, 0.534)
+}
+
+#portfolio-main{
+    padding: 10pc 0;
+}
+
+.portfolio-section{
+    padding:10px 10%
+}
+.portfolio-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: darkcyan;
+}
+.portfolio-work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+.portfolio{
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio img{
+    width: 100%;
+    border-radius: 10px;
+    display:block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),darkcyan);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.layer p{
+    color: aliceblue;
+}
+
+.layer a{
+    margin-top: 60px;
+    color: darkcyan;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.portfolio:hover img{
+    transform: scale (1.1);
+}
+.portfolio:hover .layer{
+    height: 100%
+}
+ 
+.contact-row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: 150px;
+}
+.contact-left{
+    margin-top: 50px;
+    flex-basis: 25%;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: darkcyan;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p{
+    color: darkcyan;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.social-icons{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: darkcyan;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: darkcyan;
+    transform: translateY(-5px);
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 80%;
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: darkcyan;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
